@@ -1,21 +1,71 @@
-body {
-  background-color: #F2F2F2;
+:root {
+  --bg-color: #FFFFFF;
+  --bg-color2: #F2F2F2;
+  --logo: none;
+  --logo-light:block;
+  --t-color: #111517;
 }
-.form-wrapper {
-  position: relative;
+
+.dark {
+  --bg-color: #2B3844;
+  --bg-color2: #202C36;
+  --logo: block;
+  --logo-light:none;
+  --t-color: #FFFFFF;
 }
-.form-div::before {position: absolute;
-  display: block;
-  top: 25px;
-  left: 37px;
-  width: 23px;
-  height: 23px;
- 
-  background-image: url('../images/icon-search-black.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  content:'' ;
+
+.body {
+  background-color: var(--bg-color2);
 }
-input {
-  border: none;
+
+img{
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.site-header {
+  color: var(--t-color);
+  background-color: var(--bg-color);
+  padding: 24px 0;
+}
+
+.logo-img{
+  display: var(--logo-light);
+}
+
+.logo-dark-img {
+  display: var(--logo);
+}
+
+.textt {
+  text-decoration: none;
+
+  color: var(--t-color) !important;
+}
+
+.bb {
+  color: var(--t-color);
+}
+
+.wrap {
+  background-color: var(--bg-color2) !important;
+}
+
+
+.inp {
+  background-color: var(--bg-color) !important;
+  color: var(--t-color) !important;
+}
+
+.sell {
+  background-color: var(--bg-color) !important;
+  color: var(--t-color) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hoba {
+  text-decoration: none;
 }
